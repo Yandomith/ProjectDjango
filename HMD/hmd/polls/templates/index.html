@@ -357,8 +357,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            {% else%}
-                                                HEHE
+                                         
+                                                
                                             {% endif %}
                                         {% endfor %}
 
@@ -390,9 +390,15 @@
                                     <div class="col-6">
                                         <a href="#" class="h5">{{Post.postName}}</a>
                                         <div class="d-flex my-3">
-                                            {% for Post.postRate in postList %}
-                                                <i class="fas fa-star text-primary"></i>
-                                            {% endfor %}
+                                            
+
+                                            {% comment %}
+                                                <!-- {% for i in range(5) %}
+                                                    <i class="fas fa-star text-primary"></i>
+                                                {% endfor %} -->
+                                            {% endcomment %}
+                                            
+
                                         </div>
                                         <h4 class="mb-3">Rs.{{Post.postPrice}}</h4>
                                         <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
